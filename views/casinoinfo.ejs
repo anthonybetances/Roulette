@@ -4,30 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Casino Roulette</title>
 </head>
 <body>
     <h1>CASINO OWNER INFO</h1>
 
- 
+
     <ul class="messages">
     <% for(var i=0; i<messages.length; i++) {%>
       <li class="message">
-        <span><%= messages[i].mMade %></span>
-        <span><%= messages[i].mLost %></span>
-        <span><%= messages[i].tWins %></span>
-        <span><%= messages[i].tLost %></span>
-        <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-        <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
-        <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        On this play,
+        <span>Casino made $<%= messages[i].mMade %>,</span>
+        <span>Casino lost $<%= messages[i].mLost %>,</span>
+        <span>Game won: <%= messages[i].tWins %>,</span>
+        <span>Game lost: <%= messages[i].tLost %>.</span>
       </li>
     <% } %>
     </ul>
-
-
-
-
-
+<a href="/">Log Out</a>
 
     <script src="main.js"></script>
 </body>
